@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 import './index.css'
 import Home from './Home'
+import About from './About'
 
 function App() {
 	return (
@@ -30,9 +31,6 @@ function App() {
 	)
 }
 
-function About() {
-	return <h1>About page goes here! 🎉</h1>
-}
 function Vans() {
 	return <h1>Vans page goes here! 🎉</h1>
 }

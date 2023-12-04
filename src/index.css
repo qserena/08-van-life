@@ -18,6 +18,20 @@ h1 {
 	line-height: 1.17em; /* 116.667% */
 }
 
+h2 {
+	font-size: 2rem;
+	font-weight: 700;
+	line-height: 1.19em; /* 118.75% */
+}
+
+h3 {
+	color: #161616;
+	font-size: 1.5rem;
+	font-weight: 700;
+	line-height: 1.25em; /* 125% */
+	margin-top: 0;
+}
+
 p {
 	font-size: 1rem;
 	font-weight: 500;
@@ -71,6 +85,8 @@ nav a:hover {
 	margin-right: 1.63em;
 }
 
+/* Home */
+
 .home {
 	color: #ffffff;
 	background: linear-gradient(
@@ -102,6 +118,46 @@ nav a:hover {
 	font-size: 1.13em;
 	font-weight: 700;
 	line-height: 1.76em; /* 175.898% */
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.home .big-btn {
+	margin-top: 52px;
+}
+
+/* About */
+
+.about {
+	color: #161616;
+}
+
+.about .hero {
+	background: url('./assets/image-54.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 233px;
+}
+
+.destination-container {
+	border-radius: 5px;
+	background: #ffcc8d;
+	padding: 2em 2.31em;
+	margin-top: 54px;
+	margin-bottom: 54px;
+}
+
+.black-btn {
+	color: #fff;
+	border-radius: 10px;
+	border: none;
+	background: #161616;
+	font-size: 1rem;
+	font-weight: 700;
+	padding: 0.75em 1.38em;
+	line-height: 1.5em;
+	cursor: pointer;
 }
 
 footer {
