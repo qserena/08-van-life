@@ -18,10 +18,16 @@ h1 {
 	line-height: 1.17em; /* 116.667% */
 }
 
+p {
+	font-size: 1rem;
+	font-weight: 500;
+	line-height: 1.5em; /* 150% */
+}
+
 nav .container {
 	display: flex;
 	justify-content: space-between;
-	gap: 1.8em;
+	gap: 1.7em;
 	align-items: center;
 	margin-top: 2.25em; /* 36px */
 	margin-bottom: 2.25em; /* 36px */
@@ -80,6 +86,24 @@ nav a:hover {
 	padding-top: 66px;
 }
 
+.home .container {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+}
+
+.big-btn {
+	color: #fff;
+	background-color: #ff8c38;
+	height: 50px;
+	width: 494px;
+	text-align: center;
+	font-size: 1.13em;
+	font-weight: 700;
+	line-height: 1.76em; /* 175.898% */
+}
+
 footer {
 	text-align: center;
 	color: #aaaaaa;
@@ -87,4 +111,10 @@ footer {
 	font-size: 0.88rem;
 	padding-top: 1.63em;
 	padding-bottom: 1.63em;
+}
+
+@media (width < 546px) {
+	.big-btn {
+		width: 100%;
+	}
 }
