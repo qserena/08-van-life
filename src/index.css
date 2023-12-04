@@ -115,12 +115,17 @@ nav a:hover {
 	height: 50px;
 	width: 494px;
 	text-align: center;
-	font-size: 1.13em;
+	font-size: 1.13rem;
 	font-weight: 700;
 	line-height: 1.76em; /* 175.898% */
 	border: none;
 	border-radius: 5px;
-	cursor: pointer;
+	text-decoration: none;
+	padding-top: 0.5em;
+}
+
+.big-btn:hover {
+	transform: translate(1px, 1px);
 }
 
 .home .big-btn {
@@ -157,7 +162,11 @@ nav a:hover {
 	font-weight: 700;
 	padding: 0.75em 1.38em;
 	line-height: 1.5em;
-	cursor: pointer;
+	text-decoration: none;
+}
+
+.black-btn:hover {
+	transform: translate(1px, 1px);
 }
 
 footer {
