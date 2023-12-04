@@ -6,8 +6,85 @@ html,
 body {
 	margin: 0;
 	padding: 0;
+	background: #fff7ed;
+	font-family: 'Inter', sans-serif;
 }
 
-nav > a {
+/* Typography */
+
+h1 {
+	font-size: 2.25rem;
+	font-weight: 800;
+	line-height: 1.17em; /* 116.667% */
+}
+
+nav .container {
+	display: flex;
+	justify-content: space-between;
+	gap: 1.8em;
+	align-items: center;
+	margin-top: 2.25em; /* 36px */
+	margin-bottom: 2.25em; /* 36px */
+}
+
+nav a {
 	text-decoration: none;
+	color: #4d4d4d;
+	text-align: right;
+	font-size: 1rem;
+	font-weight: 600;
+	line-height: 1.43em; /* 143.267% */
+}
+
+nav a:hover {
+	text-decoration: underline;
+	color: #161616;
+}
+
+.logo-text {
+	margin-right: auto;
+	color: #000;
+	font-size: 1.56rem;
+	font-weight: 900;
+	line-height: 1.59em; /* 158.842% */
+}
+
+.logo-text:hover {
+	text-decoration: none;
+}
+
+.app {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+}
+
+.container {
+	margin-left: 1.63em;
+	margin-right: 1.63em;
+}
+
+.home {
+	color: #ffffff;
+	background: linear-gradient(
+			0deg,
+			rgba(0, 0, 0, 0.46) 0%,
+			rgba(0, 0, 0, 0.46) 100%
+		),
+		url('./assets/image-53.png'),
+		lightgray 0px -65.191px / 100% 178.109% no-repeat;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 500px;
+	padding-top: 66px;
+}
+
+footer {
+	text-align: center;
+	color: #aaaaaa;
+	background: #252525;
+	font-size: 0.88rem;
+	padding-top: 1.63em;
+	padding-bottom: 1.63em;
 }
