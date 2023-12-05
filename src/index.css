@@ -185,16 +185,19 @@ footer {
 }
 
 /*** VAN PAGES ***/
+
 .van-list-container {
 	padding-inline: 23px;
 }
 
 .van-list {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	/* grid-template-columns: 1fr 1fr; */
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 	justify-items: center;
 	gap: 34px;
 	margin-top: 57px;
+	margin-bottom: 80px;
 }
 
 .van-tile a {
@@ -222,6 +225,7 @@ footer {
 	background-color: #ffead0;
 	color: #4d4d4d;
 	transition: 200ms all cubic-bezier(0.4, 0, 0.2, 1);
+	text-transform: capitalize;
 }
 
 .van-type:hover {
