@@ -4,6 +4,8 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 import './index.css'
 import Home from './pages/Home'
 import About from './pages/About'
+import Vans from './pages/Vans'
+import './server.js'
 
 function App() {
 	return (
@@ -29,10 +31,6 @@ function App() {
 			</footer>
 		</BrowserRouter>
 	)
-}
-
-function Vans() {
-	return <h1>Vans page goes here! 🎉</h1>
 }
 
 ReactDOM.createRoot(document.getElementById('root')).render(<App />)
