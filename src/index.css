@@ -320,6 +320,14 @@ i[class*='van-type-'] {
 	font-size: 1.5rem;
 }
 
+.btn-div {
+	margin-top: 1em;
+	margin-bottom: 2em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
 .van-detail .link-button {
 	background-color: #ff8c38;
 	color: white;
