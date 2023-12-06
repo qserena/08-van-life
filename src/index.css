@@ -216,6 +216,7 @@ footer {
 }
 
 .van-type {
+	display: inline-block;
 	height: 34px;
 	padding: 6px 26px;
 	font-style: normal;
