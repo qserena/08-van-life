@@ -53,13 +53,22 @@ p {
 	line-height: 1.5em; /* 150% */
 }
 
-nav .container {
+header .container {
+	display: flex;
+	align-items: center;
+	margin-top: 2.25em; /* 36px */
+	margin-bottom: 2.25em; /* 36px */
+}
+
+header .container a {
+	text-decoration: none;
+}
+
+.container nav {
 	display: flex;
 	justify-content: space-between;
 	gap: 1.7em;
 	align-items: center;
-	margin-top: 2.25em; /* 36px */
-	margin-bottom: 2.25em; /* 36px */
 }
 
 nav a {
