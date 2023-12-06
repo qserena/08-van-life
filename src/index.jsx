@@ -30,10 +30,6 @@ function App() {
 					</Route>
 				</Route>
 			</Routes>
-
-			<footer>
-				<p>Ⓒ 2023 #VANLIFE</p>
-			</footer>
 		</BrowserRouter>
 	)
 }
