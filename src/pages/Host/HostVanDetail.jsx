@@ -5,7 +5,7 @@ export default function HostVanDetail() {
 	const [currentVan, setCurrentVan] = useState(null)
 	const params = useParams()
 
-	const activeStyle = {
+	const activeStyles = {
 		fontWeight: 'bold',
 		textDecoration: 'underline',
 		color: '#161616',
@@ -45,12 +45,12 @@ export default function HostVanDetail() {
 						</div>
 					</div>
 
-					<nav className="host-detail-nav">
+					<nav className="host-van-detail-nav">
 						<NavLink
 							to="."
 							end
 							style={({ isActive }) =>
-								isActive ? activeStyle : null
+								isActive ? activeStyles : null
 							}
 						>
 							Details
@@ -58,7 +58,7 @@ export default function HostVanDetail() {
 						<NavLink
 							to="pricing"
 							style={({ isActive }) =>
-								isActive ? activeStyle : null
+								isActive ? activeStyles : null
 							}
 						>
 							Pricing
@@ -66,13 +66,13 @@ export default function HostVanDetail() {
 						<NavLink
 							to="photos"
 							style={({ isActive }) =>
-								isActive ? activeStyle : null
+								isActive ? activeStyles : null
 							}
 						>
 							Photos
 						</NavLink>
 					</nav>
-					<Outlet />
+					<Outlet context={{ currentVan }} />
 				</div>
 			)}
 		</section>
