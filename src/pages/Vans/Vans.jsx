@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
+import { getVans } from '../../api.js'
 
 export default function Vans() {
 	const [vans, setVans] = useState([])
@@ -7,11 +8,12 @@ export default function Vans() {
 	const typeFilter = searchParams.get('type')
 
 	useEffect(() => {
-		fetch('/api/vans')
-			.then((response) => response.json())
-			.then((result) => {
-				setVans(result.vans)
-			})
+		async function loadVans() {
+			const data = await getVans()
+			setVans(data)
+		}
+
+		loadVans()
 	}, [])
 
 	const displayedVans = typeFilter
