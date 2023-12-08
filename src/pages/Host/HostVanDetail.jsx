@@ -1,9 +1,12 @@
 import { useState, useEffect } from 'react'
 import { useParams, Link, NavLink, Outlet } from 'react-router-dom'
+import { getHostVans } from '../../api.js'
 
 export default function HostVanDetail() {
 	const [currentVan, setCurrentVan] = useState(null)
-	const params = useParams()
+	const { id } = useParams()
+	const [loading, setLoading] = useState(false)
+	const [error, setError] = useState(null)
 
 	const activeStyles = {
 		fontWeight: 'bold',
@@ -12,18 +15,28 @@ export default function HostVanDetail() {
 	}
 
 	useEffect(() => {
-		fetch(`/api/host/vans/${params.id}`)
-			.then((response) => response.json())
-			.then((data) => {
-				console.log(data.vans)
-				setCurrentVan(data.vans)
-			})
-	}, [])
+		async function loadVans() {
+			setLoading(true)
+			try {
+				const data = await getHostVans(id)
+				setCurrentVan(data)
+			} catch (err) {
+				setError(err)
+			} finally {
+				setLoading(false)
+			}
+		}
 
-	if (!currentVan) {
-		return <h3>Loading...</h3>
+		loadVans()
+	}, [id])
+
+	if (loading) {
+		return <h2>Loading...</h2>
 	}
 
+	if (error) {
+		return <h2>There was an error: {error.message}</h2>
+	}
 	return (
 		<section>
 			<Link to=".." relative="path" className="back-button">
