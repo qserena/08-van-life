@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useParams, Link, useLocation } from 'react-router-dom'
-import { getVans } from '../../api.js'
+import { getVan } from '../../api.js'
 
 export default function VanDetail() {
 	const { id } = useParams()
@@ -11,10 +11,10 @@ export default function VanDetail() {
 	const [error, setError] = useState(null)
 
 	useEffect(() => {
-		async function loadVans() {
+		async function loadVan() {
 			setLoading(true)
 			try {
-				const data = await getVans(id)
+				const data = await getVan(id)
 				setVan(data)
 			} catch (err) {
 				setError(err)
@@ -22,7 +22,7 @@ export default function VanDetail() {
 				setLoading(false)
 			}
 		}
-		loadVans()
+		loadVan()
 	}, [id])
 
 	if (loading) {
