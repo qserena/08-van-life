@@ -11,6 +11,7 @@ export default function Login() {
 	const [error, setError] = useState(null)
 	const location = useLocation()
 	const navigate = useNavigate()
+	const from = location.state?.from || '/host'
 
 	function handleSubmit(e) {
 		e.preventDefault()
@@ -20,7 +21,8 @@ export default function Login() {
 			.then((data) => {
 				setError(null)
 				localStorage.setItem('loggedin', true)
-				navigate('/host', { replace: true })
+
+				navigate(from, { replace: true })
 			})
 			.catch((err) => {
 				console.log(err.message)
