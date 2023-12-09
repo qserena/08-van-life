@@ -10,11 +10,7 @@ export default function Login() {
 	const [status, setStatus] = useState('idle')
 	const [error, setError] = useState(null)
 	const location = useLocation()
-	// useEffect(() => {
-	// 	if (status === 'submitting') {
-	// 	} else {
-	// 	}
-	// }, [status])
+	const navigate = useNavigate()
 
 	function handleSubmit(e) {
 		e.preventDefault()
@@ -22,11 +18,13 @@ export default function Login() {
 
 		loginUser(loginFormData)
 			.then((data) => {
+				console.log('hej')
 				setError(null)
-				console.log(data)
+				navigate('/host')
 			})
 			.catch((err) => {
-				setError(err.message)
+				console.log(err.message)
+				setError(err)
 			})
 			.finally(() => {
 				setStatus('idle')
