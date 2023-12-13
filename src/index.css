@@ -421,7 +421,7 @@ i[class*='van-type-'] {
 	margin-bottom: 50px;
 }
 
-a {
+.host-van-list-container a {
 	color: unset;
 	text-decoration: unset;
 }
