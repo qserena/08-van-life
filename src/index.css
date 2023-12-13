@@ -350,9 +350,6 @@ i[class*='van-type-'] {
 	text-decoration: none;
 }
 
-.van-detail-container .back-button:visited {
-}
-
 .van-detail-container .back-button span {
 	text-decoration: underline;
 }
@@ -422,6 +419,11 @@ i[class*='van-type-'] {
 	justify-content: start;
 	gap: 15px;
 	margin-bottom: 50px;
+}
+
+a {
+	color: unset;
+	text-decoration: unset;
 }
 
 .host-vans-card {
