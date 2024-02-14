@@ -37,6 +37,7 @@ export default function Vans() {
 					search: `?${searchParams.toString()}`,
 					type: typeFilter,
 				}}
+				aria-label={`View details for ${van.name}, priced at $${van.price} per day`}
 			>
 				<img src={van.imageUrl} />
 				<div className="van-info">
