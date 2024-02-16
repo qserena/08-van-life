@@ -1,6 +1,7 @@
 # VanLife
-![Screen shot of vanlife app](./vanlife.png)
+
 ## Description
+![Screen shot of vanlife app](./vanlife.png)
 
 ## Technologies
 
