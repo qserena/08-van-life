@@ -1,4 +1,4 @@
-# VanLife
+# VanLife - A Way To Rent Your Van
 
 ## Description
 ![Screen shot of vanlife app](./vanlife.png)
