@@ -16,4 +16,7 @@ This app is built with React Router to handle client-side routing.
 - Firebase
 
 ## Live link
+VanLife is deployed here:
 [https://serenander-vanlife.netlify.app](https://serenander-vanlife.netlify.app/)
+
+Please feel free to click around and explore!
