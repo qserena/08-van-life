@@ -15,10 +15,10 @@ This app is built with React Router to handle client-side routing.
 - JavaScript
 - React
 - React Router 6
-- Firebase
+- Firebase database
 
 ## Live link
 VanLife is deployed here:
-[https://serenander-vanlife.netlify.app](https://serenander-vanlife.netlify.app/)
+[https://toms-vanlife.netlify.app](https://toms-vanlife.netlify.app/)
 
 Please feel free to click around and explore!
