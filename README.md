@@ -13,6 +13,7 @@ This app is built with React Router to handle client-side routing.
 - HTML
 - CSS
 - JavaScript
+- TypeScript
 - React
 - React Router 6
 - Firebase database
